@@ -1,0 +1,228 @@
+@media (min-width: 996px) {
+	.container {
+		margin-top: 0;
+	}
+
+	.nav {
+		&__desktop {
+			display: flex;
+		}
+
+		&__mobile {
+			display: none;
+		}
+	}
+
+	nav {
+		position: fixed;
+		padding-left: 12.5px;
+		border-bottom: none;
+		--before-bg-color: #fce9d9;
+		&::before,
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			height: 1px;
+			background-color: $secondaryColor;
+			width: 50%;
+		}
+
+		&::before {
+			left: 0;
+			background-color: var(--before-bg-color);
+		}
+		img {
+			height: 100px;
+			width: 100px;
+		}
+	}
+
+	.landingPage {
+		&__desktop {
+			position: relative;
+			display: flex;
+			width: 100vw;
+			height: 100vh;
+
+			&--left {
+				display: flex;
+				overflow: hidden;
+			}
+
+			&--right {
+				width: 50%;
+
+				.headline {
+					font-size: 6.2rem;
+				}
+
+				.headlineDevelopment {
+					font-size: 2.4rem;
+				}
+
+				.buttomDown {
+					padding-bottom: 5em;
+				}
+			}
+		}
+	}
+
+	//sekcja main
+
+	.sectionHeadline {
+		padding-top: 3em;
+	}
+
+	.mainSection {
+		flex-direction: row-reverse;
+		&__left {
+			width: 60%;
+
+			.sectionText {
+				padding: 0 5em;
+				font-size: 1.8rem;
+				line-height: 30px;
+			}
+
+			.button-33 {
+				font-size: 1.8rem;
+				margin-bottom: 0;
+			}
+		}
+
+		&__right {
+			width: 40%;
+			.myPhoto {
+				margin-top: 4em;
+				height: 500px;
+			}
+		}
+	}
+
+	.reasons {
+		width: 100%;
+		padding: 5em 0;
+		flex-direction: row;
+		justify-content: center;
+
+		.reasons__center,
+		&__left,
+		&__right {
+			width: 30%;
+			justify-content: center;
+			align-items: center;
+		}
+
+		&__left,
+		&__right {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+		}
+		.reasons__center {
+			display: flex;
+			position: relative;
+			border-radius: 36px;
+			height: 500px;
+			width: 350px;
+			background: url('../img/hayley-kim-studios-sRSRuxkOuzI-unsplash.jpg');
+			background-size: cover;
+			background-position: center;
+			overflow: hidden;
+			box-shadow: 0 4px 6px rgba(101, 62, 21, 0.3),
+				0 1px 3px rgba(101, 62, 21, 0.2);
+
+			.shadow {
+				width: 100%;
+				background-color: rgba(51, 51, 51, 0.25);
+			}
+		}
+
+		.reason {
+			&--headline {
+				font-size: 2.2rem;
+				padding: 1em 0;
+			}
+
+			&--text {
+				font-size: 1.6em;
+				padding: 0 2em;
+				font-weight: 300;
+			}
+		}
+	}
+
+	.achivements {
+		justify-content: space-around;
+
+		.achivement {
+			i {
+				font-size: 3.2rem;
+			}
+
+			.number {
+				font-size: 2.6rem;
+				font-weight: bold;
+			}
+
+			.text {
+				font-size: 1.8rem;
+				font-weight: 300;
+			}
+		}
+	}
+
+	.priceList {
+		.list {
+			.item {
+				font-size: 2.8rem;
+			}
+
+			.itemDetails {
+				font-size: 1.8rem;
+			}
+
+			.exp {
+				font-size: 1.6rem;
+			}
+		}
+	}
+
+	.opinions {
+		&__boxes {
+			padding: 3em 0 6em;
+		}
+	}
+
+	.fast-contact {
+		flex-direction: row;
+		justify-content: center;
+
+		.logo,
+		.info {
+			padding: 0em 10em;
+		}
+
+		.logo {
+			img {
+				height: 160px;
+				width: 160px;
+			}
+		}
+
+		.info {
+			h2 {
+				font-size: 2.4rem;
+			}
+
+			&-item {
+				font-size: 1.6rem;
+			}
+			.phone-number,
+			.email-address {
+				font-size: 2rem;
+			}
+		}
+	}
+}

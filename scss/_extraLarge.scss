@@ -1,0 +1,16 @@
+@media (min-width: 1440px) {
+	.opinions {
+		padding: 0 15em;
+	}
+
+	.gallery {
+		&__box {
+			grid-template-columns: repeat(4, 1fr);
+
+			img {
+				height: 200px;
+				width: 300px;
+			}
+		}
+	}
+}

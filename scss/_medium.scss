@@ -1,0 +1,12 @@
+@media (min-width: 767px) {
+	.gallery {
+		&__box {
+			grid-template-columns: repeat(2, 1fr);
+
+			img {
+				width: 350px;
+				height: 250px;
+			}
+		}
+	}
+}
